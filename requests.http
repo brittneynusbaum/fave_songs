@@ -1,0 +1,26 @@
+GET http://localhost:3000/songs
+
+### show
+GET http://localhost:3000/songs/3
+
+### create
+POST http://localhost:3000/songs
+content-type: application/json
+
+{
+  "title": "test",
+  "album": "testing",
+  "artist": "test this",
+  "year": "2000"
+}
+
+### update
+PATCH http://localhost:3000/songs/4
+content-type: application/json
+
+{
+  "year": "2015"
+}
+
+### destroy
+DELETE http://localhost:3000/songs/5
